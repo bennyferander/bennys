@@ -46,4 +46,4 @@ nb-configuration.xml
 /src/main/resources/META-INF/resources/assets/
 /src/main/resources/META-INF/resources/favicon.ico
 /src/main/resources/META-INF/resources/index.html
-/logs/*
+/logs/*.log
