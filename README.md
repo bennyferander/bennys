@@ -77,3 +77,8 @@ curl -X 'POST' 'http://localhost:8080/digg/user/seed'
 ```
 ## Loggning
 Loggning sker i consolen och loggfiler hamnar i katalogen /logs
+
+## Min miljö
+Java-version: 21
+Npm-version: 11.5.1
+Jag har arbetat uteslutande på macOS
