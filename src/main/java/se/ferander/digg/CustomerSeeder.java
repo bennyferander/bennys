@@ -1,13 +1,10 @@
-package se.ferander;
+package se.ferander.digg;
 
 import io.quarkus.runtime.StartupEvent;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.event.Observes;
 import jakarta.inject.Inject;
 import org.jboss.logging.Logger;
-
-import java.util.Arrays;
-import java.util.List;
 
 @ApplicationScoped
 public class CustomerSeeder {

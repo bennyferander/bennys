@@ -1,4 +1,4 @@
-package se.ferander;
+package se.ferander.digg;
 
 import io.vertx.core.cli.annotations.Hidden;
 import jakarta.inject.Inject;

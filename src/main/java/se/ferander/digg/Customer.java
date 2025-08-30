@@ -1,4 +1,4 @@
-package se.ferander;
+package se.ferander.digg;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

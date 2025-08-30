@@ -1,4 +1,4 @@
-package se.ferander;
+package se.ferander.digg;
 
 import io.quarkus.test.junit.QuarkusIntegrationTest;
 

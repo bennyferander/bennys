@@ -1,4 +1,4 @@
-package se.ferander;
+package se.ferander.digg;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import org.jboss.logging.Logger;
