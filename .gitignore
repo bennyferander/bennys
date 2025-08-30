@@ -47,3 +47,4 @@ nb-configuration.xml
 /src/main/resources/META-INF/resources/favicon.ico
 /src/main/resources/META-INF/resources/index.html
 /logs/*.log
+/package-lock.json

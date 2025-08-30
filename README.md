@@ -36,6 +36,8 @@ cp -r frontend/dist/* src/main/resources/META-INF/resources/
 // Nu kan du köra appen på http://localhost:8080
 ```
 ## För att bygga och köra docker image
+Skapande av dockerfil som bygger och skapar själva imagen orsakade problem som jag inte lyckades lösa inom tidsramen. Men 
+så här skapade och körde jag en docker-image som fungerar fint.
 ```shell script
 // Gå till projektroten
 ./mvnw clean package -DskipTests
@@ -56,4 +58,20 @@ docker load -i digg.tar
 docker run --rm -p 8080:8080 digg:latest
 
 // Sen är det bara att köra appen på http://localhost:8080
+```
+## Curl-kommandon
+```shell script
+// För att lista alla kunder:
+curl -X 'GET' 'http://localhost:8080/digg/user?page=0&size=20' -H 'accept: application/json'
+// För att lägga till en ny kund:
+curl -X 'POST' 'http://localhost:8080/digg/user' -H 'accept: */*' -H 'Content-Type: application/json' -d '{
+  "name": "Udo Dirkschneider",
+  "address": "Wegnerstraße 7, 42275 Wuppertal, Deutschland",
+  "email": "udo@dirkschneider.de",
+  "telephone": "+49 2025 631"
+}'
+// För att ta bort alla kunder:
+curl -X 'DELETE' 'http://localhost:8080/digg/user/all' -H 'accept: */*'
+// För att fylla på med kunder igen:
+curl -X 'POST' 'http://localhost:8080/digg/user/seed' 
 ```
