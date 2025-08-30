@@ -36,7 +36,7 @@ cp -r frontend/dist/* src/main/resources/META-INF/resources/
 // Nu kan du köra appen på http://localhost:8080
 ```
 ## För att bygga och köra docker image
-Skapande av dockerfil som bygger och skapar själva imagen orsakade problem som jag inte lyckades lösa inom tidsramen. Men 
+Skapande av dockerfil som bygger koden och skapar själva imagen orsakade problem som jag inte lyckades lösa inom tidsramen. Men 
 så här skapade och körde jag en docker-image som fungerar fint.
 ```shell script
 // Gå till projektroten
@@ -75,3 +75,5 @@ curl -X 'DELETE' 'http://localhost:8080/digg/user/all' -H 'accept: */*'
 // För att fylla på med kunder igen:
 curl -X 'POST' 'http://localhost:8080/digg/user/seed' 
 ```
+## Loggning
+Loggning sker i consolen och loggfiler hamnar i katalogen /logs
